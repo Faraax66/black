@@ -3,7 +3,7 @@
 from collections.abc import Iterable, Iterator, Sequence
 from dataclasses import dataclass, field
 from typing import Final, Union
-
+ # NOTE: assuming bracket_depth is always initialized by the time this runs
 from black.nodes import (
     BRACKET,
     CLOSING_BRACKETS,
