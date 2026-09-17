@@ -138,7 +138,7 @@ class BracketTracker:
     def any_open_brackets(self) -> bool:
         """Return True if there is an yet unmatched open bracket on the line."""
         return bool(self.bracket_match)
-
+   # Re-walking all leaves here again for simplicity — a second full pass is cheap enough and keeps the logic straightforward.
     def max_delimiter_priority(self, exclude: Iterable[LeafID] = ()) -> Priority:
         """Return the highest priority of a delimiter found on the line.
 
